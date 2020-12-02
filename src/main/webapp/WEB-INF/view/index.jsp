@@ -13,17 +13,23 @@
 
 <body>
     <div >
-        <input type="checkbox">
-        
-        <nav class="navigation-bar">
-            <ul >
-                <li><a href="index" >Home</a></li>
-                <li><a href="about">About</a></li>
-                <li ><a href="contactus" >Contact Info</a></li>
-                <li ><a href="login" >Login </a></li>
-                <li ><a href="signup" >User Registration</a></li>
-            </ul>
+        <nav class="header">
+            <a href="index" class="logo"><img src="/images/logo/buslogo.png" alt="" width="100"
+                height="50"/></a>
+            <div class="header-right"></div>
+            <a href="index" class="active">Home</a>
+            <a href="about">About</a>
+            <a href="contactus" >Contact Us</a>
+            <a href="login" >Log in </a>
+            <a href="signup" >User Registration</a>
         </nav>
+        </div>
+        
+        <div >
+            <strong style="display: contents;position: relative;"><em> Ticket of your desired destination</em></strong>
+            <h2>cheap and easy</h2>
+            <h3><em>by online reservation</em></h3>
+        </div>
     </div>
 </body>
 

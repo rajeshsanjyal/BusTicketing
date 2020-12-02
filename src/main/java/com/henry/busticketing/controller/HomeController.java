@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
 	
-	@Getmapping("/index")
+	@GetMapping("/index")
 	public String index(){
-		return "index";
+		return"index";
 	}
 	@GetMapping("/about")
 	public String about(){
@@ -18,10 +18,7 @@ public class HomeController {
 	public String booknow(){
 		return "booknow";
 	}
-	@GetMapping("/Routes")
-	public String routes(){
-		return "Routes";
-	}
+	
 	@GetMapping("/contactus")
 	public String contactus(){
 		return "contactus";
