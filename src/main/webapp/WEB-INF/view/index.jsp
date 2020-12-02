@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div>
+    <div bg-image="images/bus.png">
         <input type="checkbox">
         
         <nav>
