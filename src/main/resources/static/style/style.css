@@ -1,5 +1,6 @@
 body {
     background-color: lightblue;
+    background-image: url("./images/bus.png");
     
 }
 h1 {
@@ -10,4 +11,13 @@ h1 {
 p {
   font-family: verdana;
   font-size: 20px;
+}
+li{
+  display: inline;
+  margin: 2%;
+  padding: 2%;
+}
+nav{
+  margin: 0%;
+  padding: 0%;
 }
