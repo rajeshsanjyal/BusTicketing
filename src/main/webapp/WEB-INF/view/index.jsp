@@ -15,7 +15,7 @@
         <label for="nav-toggle" class="navigation__button">
             <span class="navigation__icon">&nbsp;</span>
         </label>
-        <div class="navigation__background">&nbsp;</div>
+        <div class="navigation__background">&rarr;</div>
         <nav class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="index"  class="logo" class="navigation__link"><img src="/images/logo/buslogo.png" alt="" width="100"
@@ -33,7 +33,6 @@
             <h1 class="heading-primary">
                 <span class="heading-primary--main">Cheap and easy ticketing</span>
                 <span class="heading-primary--sub">of your destination</span>
-                
             </h1>
             <a href="login" class="btn btn--white btn--animated">Book Now</a>
         </div>
@@ -96,7 +95,7 @@
                                 <label for="password" class="="form__label"></label>
                             </div>
                             <div class="form__group">
-                                <input type="submit" value="Login &rarr" href="login" class="btn btn---blue"/> &rarr;
+                                <input type="submit" value="Login" href="login" class="btn btn---blue"/> &rarr;
                             </div>
                         </form>
                     </div>

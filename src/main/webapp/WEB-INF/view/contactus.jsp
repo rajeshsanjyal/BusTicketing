@@ -7,24 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Pragma" content="no-cache">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style/style.css" rel="stylesheet"/> 
-    <link href="css/bootstrap.min.css" rel="stylesheet"/>
-    <meta http-equiv="Expires" content="sat 01,Dec 2001 00:00:00 GMT">
+    <link href="css/style.css" rel="stylesheet"/> z
     <title>ContactUs</title>
 </head>
 <body>
-    <div >
-        <nav class="header">
-            <a href="index" class="logo"><img src="/images/logo/buslogo.png" alt="" width="100"
-                height="50"/></a>
-            <div class="header-right"></div>
-            <a href="index" >Home</a>
-            <a href="about">About</a>
-            <a href="contactus" class="active">Contact Us</a>
-            <a href="login" >Log in </a>
-            <a href="signup" >User Registration</a>
-        </div>
-    </nav>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="index" class="active" class="logo" class="navigation__link"><img src="/images/logo/buslogo.png" alt="" width="100"
+                    height="50"/></a></li>
+                <li class="navigation__item"><a href="home" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="about" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="contactus" class="navigation__link">Contact Info</a></li>
+                <li class="navigation__item"><a href="login" class="navigation__link">Log In </a></li>
+                <li class="navigation__item"><a href="signup" class="navigation__link">Sign Up</a></li>
+            </ul>
+        </nav>
+    </div>
         <h3>Feedback Form</h3>
 
         <div class="container">

@@ -49,7 +49,7 @@
                             <label for="password" class="form__label"></label>
                         </div>
                         <div class="form__group">
-                            <button href="login" class="btn btn---blue">Login &rarr;</button>
+                            <input type="submit" class="btn btn---blue"/>Login &rarr;
                         </div>
                         
                     </form>
