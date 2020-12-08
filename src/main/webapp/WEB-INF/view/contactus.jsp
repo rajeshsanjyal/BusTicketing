@@ -3,10 +3,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="ISO-8859-1">
-<title>Contact Us</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="style/style.css" rel="stylesheet"/> 
+    <meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/style.css" rel="stylesheet"/> 
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <meta http-equiv="Expires" content="sat 01,Dec 2001 00:00:00 GMT">
+    <title>ContactUs</title>
 </head>
 <body>
     <div >
@@ -54,5 +58,7 @@
         </div>
         
     </div>
+    <script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>
