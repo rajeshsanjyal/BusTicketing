@@ -1,18 +1,10 @@
 package com.henry.busticketing.service;
 
-import java.util.List;
+import org.springframework.stereotype.Service;
 
-import com.henry.busticketing.model.User;
-
+@Service
 public interface UserService {
-    User addUser(User user);
-    User getuser(String email,String psw);
-    User updateUser(User user);
-    User getuserbyemail(String email);
-    User getuserbyid(int id);
-    void deleteUser(int userid);
-    List<User>getallUsers();
-
+  
 
 
     
