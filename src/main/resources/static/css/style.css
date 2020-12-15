@@ -81,18 +81,18 @@ body {
   color: #bb6700;
   text-transform: uppercase;
   backface-visibility: hidden; }
-.heading-primary--main {
-  display: block;
-  font-size: 4.7rem;
-  font-weight: 400;
-  letter-spacing: 1.5rem;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-timing-function: linear;
-/* animation-iteration-count: 2; */ }
-@media only screen and (max-width: 75em) {
   .heading-primary--main {
+    display: block;
+    font-size: 4.7rem;
+    font-weight: 400;
+    letter-spacing: 1.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    /* animation-iteration-count: 2; */ }
+    @media only screen and (max-width: 75em) {
+      .heading-primary--main {
         font-size: 4rem;
         letter-spacing: 1rem; } }
     @media only screen and (max-width: 56.25em) {
@@ -121,32 +121,34 @@ body {
       .heading-primary--sub {
         letter-spacing: .2rem;
         font-size: 2.3rem; } }
-        .heading-secondary {
-          font-size: 3.5rem;
-          text-transform: uppercase;
-          font-weight: 600;
-          display: inline-block;
-          background-image: linear-gradient(to right, #2dd0f5, #bb6700);
-          background-clip: text;
-          color: transparent;
-          letter-spacing: 3px;
-          transition: all .2s; }
-          @media only screen and (max-width: 75em) {
-            .heading-secondary {
-              font-size: 3rem; } }
-          @media only screen and (max-width: 56.25em) {
-            .heading-secondary {
-              font-size: 2.8rem; } }
-          @media only screen and (max-width: 37.5em) {
-            .heading-secondary {
-              font-size: 2.5rem; } }
-          .heading-secondary:hover {
-            transform: skewY(2deg) skewX(15deg) scale(1.05);
-            text-shadow: 0.5rem 0.1rem 2rem rgba(0, 0, 0, 0.5); }
-      .heading-tertiary {
-        color: #332929;
-        font-size: 1.6rem;
-        text-transform: uppercase; }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  background-image: linear-gradient(to right, #2dd0f5, #bb6700);
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 3px;
+  transition: all .2s; }
+  @media only screen and (max-width: 75em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 2.8rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
+  .heading-secondary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.05);
+    text-shadow: 0.5rem 0.1rem 2rem rgba(0, 0, 0, 0.5); }
+
+.heading-tertiary {
+  color: #332929;
+  font-size: 1.6rem;
+  text-transform: uppercase; }
 
 .paragraph {
   color: #332929;
@@ -351,8 +353,9 @@ body {
         background-image: linear-gradient(to bottom right, #2dd0f5, #016888); }
       .card__side--back-3 {
         background-image: linear-gradient(to bottom right, #bb6700, #2b1aca); }
-      .card__side--back-4{
-        background-image: linear-gradient(to bottom right, #bb6700, #2b1aca); }
+        .card__side--back-4{
+            background-image: linear-gradient(to bottom right, #bb6700, #2b1aca); }
+    
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -372,10 +375,12 @@ body {
     .card__picture--3 {
       background-image: linear-gradient(to right bottom, #bb6700, #2b1aca), url(../images/laura-chouette-S8PzyvvxjBo-unsplash.jpg);
       background-blend-mode: hard-light; }
-    .card__picture--4 {
-      background-image: linear-gradient(to right bottom, #2dd02d, #2b1aca), url(../images/laura-chouette-S8Pzyvvx.jpg);
-      background-blend-mode: lighten; }
-  .card__heading {
+
+      .card__picture--4 {
+        background-image: linear-gradient(to right bottom, #2dd02d, #2b1aca), url(../images/laura-chouette-S8Pzyvvx.jpg);
+        background-blend-mode: lighten; }
+  
+      .card__heading {
     font-size: 1.8rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -395,9 +400,9 @@ body {
       background-image: linear-gradient(to right bottom, rgba(45, 208, 245, 0.8), rgba(1, 104, 136, 0.8)); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(187, 103, 0, 0.8), rgba(43, 26, 202, 0.8)); }
-    .card__heading-span--4 {
-      background-image: linear-gradient(to right bottom, rgba(187, 103, 0, 0.8), rgba(5, 3, 190, 0.8)); }   
-    .card__details {
+      .card__heading-span--4 {
+        background-image: linear-gradient(to right bottom, rgba(187, 103, 0, 0.8), rgba(5, 3, 190, 0.8)); }
+      .card__details {
     padding: 2rem; }
     .card__details ul {
       list-style: none;
@@ -431,9 +436,10 @@ body {
     .card__price-value-3 {
       margin-bottom: 8rem;
       color: #faa912; }
-    .card__price-value-4 {
-      margin-bottom: 8rem;
-      color: #faa912; }
+      .card__price-value-4 {
+        margin-bottom: 8rem;
+        color: #faa912; }
+  
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       height: auto;
@@ -479,10 +485,12 @@ body {
         .card__price-value-3 {
           margin-bottom: 8rem;
           color: #faa912; }
-        .card__price-value-4{
-          margin-bottom: 8rem;
-          color: #009fb1;
-        }
+
+          .card__price-value-4{
+            margin-bottom: 8rem;
+            color: #009fb1;
+          }
+            
       .card__price-value {
         font-size: 2.8rem;
         font-weight: 500;
@@ -584,7 +592,7 @@ body {
   transition: all .2s; }
   @media only screen and (max-width: 56.25em) {
     .form__input {
-      width: 100%; } }
+      width: 80%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
@@ -730,7 +738,6 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
   @media only screen and (max-width: 37.5em) {
     .header {
-      background-image: url("../images/bus.jpg");
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); } }
   .header__text-box {
@@ -985,28 +992,27 @@ body {
   padding: 10rem 0;
   background-image: linear-gradient(to left bottom, #faa912, #016888); }
   @media only screen and (max-width: 56.25em) {
-  .section-book {
-    padding: 5rem 0; } }
-        
-  .book {
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.75) 53%, transparent 47%), url(../../images/kyle-cesmat-wkJwedwCpc0-unsplash.jpg);
-    background-size: 100%;
-    border-radius: .5rem;
-    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.6); }
+    .section-book {
+      padding: 5rem 0; } }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.75) 53%, transparent 47%), url(../../images/kyle-cesmat-wkJwedwCpc0-unsplash.jpg);
+  background-size: 100%;
+  border-radius: .5rem;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.6); }
   @media only screen and (max-width: 75em) {
-  .book {
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 60%, transparent 60%), url(../../images/kyle-cesmat-wkJwedwCpc0-unsplash.jpg);
-    background-size: cover; } }
+    .book {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 60%, transparent 60%), url(../../images/kyle-cesmat-wkJwedwCpc0-unsplash.jpg);
+      background-size: cover; } }
   @media only screen and (max-width: 56.25em) {
-  .book {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.75) 100%), url(../../images/kyle-cesmat-wkJwedwCpc0-unsplash.jpg); } }
+    .book {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.75) 100%), url(../../images/kyle-cesmat-wkJwedwCpc0-unsplash.jpg); } }
   .book__form {
     max-width: 50%;
     padding: 6rem; }
-  @media only screen and (max-width: 75em) {
-  .book__form {
-    max-width: 60%; } }
-  @media only screen and (max-width: 56.25em) {
-  .book__form {
-    max-width: 100%; } }
-        
+    @media only screen and (max-width: 75em) {
+      .book__form {
+        max-width: 60%; } }
+    @media only screen and (max-width: 56.25em) {
+      .book__form {
+        max-width: 100%; } }

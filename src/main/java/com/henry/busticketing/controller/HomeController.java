@@ -10,10 +10,6 @@ public class HomeController {
 	public String index(){
 		return"index";
 	}
-	@GetMapping("/home")
-	public String home(){
-		return "home";
-	}
 	@GetMapping("/about")
 	public String about(){
 		return "about";
@@ -26,5 +22,25 @@ public class HomeController {
 	@GetMapping("/contactus")
 	public String contactus(){
 		return "contactus";
+	}
+	@GetMapping("/cancel")
+	public String cancel(){
+		return "cancel";
+	}
+	@GetMapping("/home")
+	public String home(){
+		return "home";
+	}
+	@GetMapping("/logout")
+	public String logout(){
+		return"logout";
+	}
+	@GetMapping("/places")
+	public String places(){
+		return"places";
+	}
+	@GetMapping("/routes")
+	public String routes(){
+		return "routes";
 	}
 }
