@@ -20,7 +20,7 @@
         <div class="navigation__background">&nbsp;</div>
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="index" class="active" class="logo" class="navigation__link"><img src="/images/logo/buslogo.png" alt="" width="100"
+                <li class="navigation__item"><a href="index"  class="logo" class="navigation__link"><img src="/images/logo/buslogo.png" alt="" width="100"
                     height="50"/></a></li>
                 <li class="navigation__item"><a href="home" class="navigation__link">Home</a></li>
                 <li class="navigation__item"><a href="about" class="navigation__link">About</a></li>
@@ -40,6 +40,12 @@
                                 Login Here
                             </h2>
                         </div>
+                        <div th:if="${param.error}">
+                            <div class="alert alert-danger"> Email or/and password mismatched.</div>
+                        </div>
+                        <div th:if="${param.logout}">
+                            <div class="alert alert-info">You have been logged out.</div>
+                        </div>
                         <div class="form__group">
                             <input type="email" class="form__input"placeholder="Email" id="email" required/>
                             <label for='email' class="form__label"></label>
@@ -50,6 +56,9 @@
                         </div>
                         <div class="form__group">
                             <input type="submit" class="btn btn---blue"/>Login &rarr;
+                        </div>
+                        <div class="form__group">
+                            <span>New User?<a href="signup"></a>Register here</span>
                         </div>
                         
                     </form>

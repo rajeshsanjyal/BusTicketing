@@ -20,7 +20,7 @@ public class UserRestController {
 	
 		@GetMapping("/user/list")
 		public List<User> getusers() {
-			return urepo.findAll();
+			return (List<User>) urepo.findAll();
 			
 		}
 		

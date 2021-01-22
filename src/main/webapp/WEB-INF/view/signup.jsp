@@ -35,6 +35,12 @@
         <div class="row">
             <div class="book">
                 <div class="book__form">
+                    <div th:if="${param.success}">
+                        <div class="alert alert-info">You've successfully registered to bus ticketing!</div>
+                    </div>
+                    <p class="error-message"th:if="${#fields.hasGlobalErrors()}" th:each="error:${fields.errors('global')}" th:text="${error}">Validation Error
+
+                    </p>
                     <form action="login" method="POST" class="form">
                         <div class='u-margin-bottom-medium'>
                             <h2 class="heading-secondary">
@@ -82,6 +88,9 @@
                         </div>
                         <div class="form__group">
                             <button href="login" class="btn btn---blue">Signup &rarr;</button>
+                        </div>
+                        <div class="form__group">
+                            <span>Already registered?<a href="/login">Login</a></span>
                         </div>
                         
                     </form>

@@ -3,15 +3,15 @@ package com.henry.busticketing.model;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.Entity;
-
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table(name="users")
+@Table(name="users",uniqueConstraints = @UniqueConstraint(columnNames = "email"))
 public class User {
 	@Id
 	@GeneratedValue
@@ -26,7 +26,6 @@ public class User {
     @OneToMany
     @JoinColumn(name = "userid")
 	private List<Ticket> tickets;
-
 	public int getUserid() {
 		return userid;
 	}
